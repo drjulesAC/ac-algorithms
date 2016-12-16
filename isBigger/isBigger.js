@@ -37,9 +37,31 @@ console.log(result) // -1
 
 **/
 
-
+//Input; two numbers
+//Output: evaluating the relationship between the two numbers, true if a is bigger, false if a is smaller, 0 if a nad b are equal, and -1 for anything else
 
 function isBigger(a, b) {
-	//Your code here
-	
-}
+	//Check if a and b are numbers
+		//If they are not numbers, return -1
+		//If they are, check if a>b
+		//If a>b return true
+		//If a<b return false
+		//else return 0
+	if ( typeof a !== 'number' || typeof b !== 'number') {
+		
+		return -1;
+	} 
+	else {
+		if (a > b) {
+		return true;
+	} else if (a < b) {
+		return false;
+	} else {
+		return 0;
+	}
+	}
+
+};
+
+
+
