@@ -32,8 +32,36 @@ var result = alphabetSoup("my string oh my");
 console.log(result) // "ghimmnorstyy"
 
 **/
+//Input: any string of all letters
+//Output: a string, with the containinv letters in alphabetical order
+
+//Input: any string of all letters
+//Output: a string, with the containinv letters in alphabetical order
 
 function alphabetSoup(str) {
-	//Your code here
+	//Examine the string for its individual letters
+    //break up the string using .split()
+	//reorder the string using .sort()
+	//return alphabetized string using .join()
+  var newString = str.split("").sort().join("").trim();
+  return newString;
 	
 }
+
+
+
+var result = alphabetSoup("hello");
+console.log(result) // "ehllo"
+
+var result = alphabetSoup("");
+console.log(result) // ""
+
+var result = alphabetSoup("f");
+console.log(result) // "f"
+
+var result = alphabetSoup("my string");
+console.log(result) // " gimnrsty"
+
+Bonus:
+var result = alphabetSoup("my string oh my");
+console.log(result) // "ghimmnorstyy"
