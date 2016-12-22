@@ -14,6 +14,20 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
+//Input: A - an array of numbers, K - the number of times the loop should run
+//Output: the rotated or reordered array
+
 function cyclicRotation(arr, rotation){
-    //Your code here...
+//for loop that runs the rotation a certain number of times
+for (i = 0; i <= rotation; i++) {
+   var arrayElement = arr.pop();
+    arr.unshift(arrayElement);
+    }
+//remove element from end of array
+//place element at beginning of array 
+    return arr;
 }
+var myArray = [1,2,3,4,5,6,7,8,9];
+
+var result = cyclicRotation(myArray, 4);
+console.log(result);
