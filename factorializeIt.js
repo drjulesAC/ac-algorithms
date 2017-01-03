@@ -7,8 +7,20 @@
 
 // Check out Arithmetic Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
+//n! = n × (n−1)
+
+//Input: any whole number (aka integer)
+//Output: the product of all the numbers >0 and <= the number itself
+
+
 function factorializeIt(num) {
   //your code here
+  //for loop to run through the calculation
+  var total = 1;
+  for (i = 1; i <= num; i++) {
+    total = total * i;
+  };
+  return total;
 }
 
-factorializeIt(5);
+console.log(factorializeIt(5));
