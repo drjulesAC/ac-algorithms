@@ -30,5 +30,46 @@ console.log(result) // "oH, hELLO!!"
 **/
 
 function swapCase(str) {
-	// Your code
+	
+	//for loop, to look at all of the letters in the string, use .lengthpoperty to tell the loop when to stop
+	//
 }
+
+function swapCase(str) {
+   var result = "";
+  for (i = 0; i < str.length; i++) {
+      if (str[i] === str[i].toUpperCase()){
+        result = result + str[i].toLowerCase();
+      } else {
+        result = result + str[i].toUpperCase();
+      }
+        
+      }
+    return result;
+    };
+
+
+//Result using .indexOf()
+
+// function swapCase(str) {
+//   var total = "";
+//   for (var i = 0; i < str.length; i++){
+//     var lowercase = str[i].toLowerCase();
+//     if (str.indexOf(lowercase) === -1) {
+//       total = total + lowercase;
+//     } else{ 
+//       total = total + str[i].toUpperCase();
+//       }
+//     }
+//   return total;
+  
+//   }
+
+  
+ 
+var result = swapCase("Hello World")
+console.log(result)
+
+var result = swapCase("");
+console.log(result) // ""
+
