@@ -10,11 +10,31 @@
 
 //The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
+//Input: string of missing pairing elements
+//Output: the pairs are arrays inside of one pair of arrays
+  //create the parent array
+ //separate the string into an array, using split
+//create a for loop to look at each letter
+//use a conditional statement to determine which partner to add
+  //push that partner letter pair into the parent
+
 function pairElement(str) {
-  //your code here
+  var parentArray = [];
+  var dna = {
+    T:"A",
+    A:"T",
+    G:"C",
+    C:"G",
+  };
+  var newStr = str.split("");
+  for (var i = 0; i < newStr.length; i++){
+    parentArray.push([newStr[i], dna[newStr[i]]]);
+  }
+  
+  return parentArray;
 }
 
-pairElement("GCG");
+console.log(pairElement("GCG"));
 
 //TEST CASES
 //pairElement("ATCGA") should return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]].
