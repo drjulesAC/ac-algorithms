@@ -12,7 +12,26 @@
 //String.fromCharCode()
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
 
+//Split the string
+//loop through it
+//convert to characters
+//join them back together or add them to a parent
+
+//Split the string
+//loop through it
+//convert to characters
+//join them back together or add them to a parent
+
 function binaryCode(str) {
+  var numGroup = str.split(" ");
+  
+  var sentence = [];
+  
+  for (i = 0; i < numGroup.length; i++){
+      sentence.push(String.fromCharCode(parseInt(numGroup[i],2)));
+  }
+  sentence = sentence.join("");
+  console.log(sentence);
 }
 
 binaryCode("01000011 01101111 01100100 01101001 01101110 01100111 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01100010 01100101 01110011 01110100 00101110");
