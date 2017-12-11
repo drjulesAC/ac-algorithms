@@ -16,3 +16,13 @@ function circleCalculation (radius) {
 	console.log("The area of the circle is " + area + " and the perimeter of the circle is " + perimeter + ".");
 }
 circleCalculation(10);
+
+//Voyagers edition
+function circleCalculation (radius){
+	var area = Math.PI * (radius * radius);
+	var perimeter = 2 * Math.PI *radius;
+	document.write("The area of the circle is " + Math.round(area) + " and the perimeter of the circle is " + Math.round(perimeter);
+}
+
+circleCalculation(5);
+circleCalculation(10);
