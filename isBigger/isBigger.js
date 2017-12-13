@@ -64,4 +64,19 @@ function isBigger(a, b) {
 };
 
 
+function isBigger(a,b){
+	if(a > b){
+		return true;
+	} else if (a<b){
+		return false;
+	}else {
+		return 0;
+	}
+
+}
+
+var result = isBigger(3,9);
+console.log(result);
+
+
 

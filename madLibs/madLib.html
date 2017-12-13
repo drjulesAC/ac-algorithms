@@ -10,9 +10,9 @@
 	 	<body>
 			 <h1>Mad Libs</h1>
 			 <ul>
-			  	<li>Noun: <input type="text" id="noun">
-			  	<li>Adjective: <input type="text" id="adjective">
-			  	<li>A Person Name: <input type="text" id="person">
+			  	<li>Noun: <input type="text" id="noun"></li>
+			  	<li>Adjective: <input type="text" id="adjective"></li>
+			  	<li>A Person Name: <input type="text" id="person"></li>
 			 </ul>
 			 <button id="lib-button" onclick="makeMadLib()" >Lib it!</button>
 			  
@@ -45,3 +45,20 @@ function makeMadLib() {
 		</body>
 	</html>
 	
+
+
+
+	<!-- <script>
+		//Voyagers Code 2017
+		$("#lib-button").on("click", function()
+		{
+			var noun = $("noun").val();
+			var adjective = $("adjective").val();
+			var person = $("person").val();
+
+			$("story").append("<p>" + person + " likes " + adjective + " "  + noun + "</p>");
+		});
+	
+	
+	
+	</script> -->
